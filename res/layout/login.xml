@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:background="@drawable/main_bg">
+
+        <TextView
+			style="@style/login_textview_style"
+			android:layout_marginTop="23dp"
+			android:layout_marginLeft="32dp"
+            android:text="用户名" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/shape_login_textarea"
+            android:ems="12"
+            android:inputType="number"
+            android:hint="学号">
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            style="@style/login_textview_style"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="32dp"
+            android:text="密码" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/shape_login_textarea"
+            android:ems="12"
+            android:inputType="textPassword"
+            android:hint="密码" />
+
+        <TextView
+			style="@style/login_textview_style"
+			android:layout_marginTop="6dp"
+			android:layout_marginLeft="32dp"
+            android:text="验证码" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/checknum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_login_textarea"
+                android:inputType="number"
+                android:ems="4" />
+
+            <ImageView
+                android:id="@+id/checknumicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/check" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/login_textview_style"
+                    android:background="@drawable/selector_login_btn"
+                    android:text="登录" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

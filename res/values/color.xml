@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_bar_bg_color">#222c2e</color>
+    
+    <color name="white">#ffffff</color>
+    
+    <color name="main_item_bg_myinfo_pressed">#0e869d</color>
+    <color name="main_item_bg_myinfo_normal">#00c0e4</color>
+    
+    <color name="main_item_bg_myscore_pressed">#5e567e</color>
+    <color name="main_item_bg_myscore_normal">#867dac</color>
+    
+    <color name="main_item_bg_history_pressed">#22876f</color>
+    <color name="main_item_bg_history_normal">#48c0a3</color>
+    
+    <color name="main_item_bg_teachnews_pressed">#c32a4d</color>
+    <color name="main_item_bg_teachnews_normal">#f4567a</color>
+    
+    <color name="main_item_bg_library_pressed">#01712c</color>
+    <color name="main_item_bg_library_normal">#0aa344</color>
+    
+    <color name="main_item_bg_map_pressed">#05556f</color>
+    <color name="main_item_bg_map_normal">#1685a9</color>
+</resources>

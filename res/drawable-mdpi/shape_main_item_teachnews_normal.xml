@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    
+    <solid android:color="@color/main_item_bg_teachnews_normal"/>
+    
+    <corners android:bottomLeftRadius="6dp"
+        android:bottomRightRadius="6dp"
+        android:topLeftRadius="6dp"
+        android:topRightRadius="6dp"/>
+    
+    <stroke android:width="1dip"
+        android:color="@color/main_item_bg_teachnews_normal"/>
+    
+    <size android:width="115dp"
+        android:height="115dp"/>
+
+</shape>

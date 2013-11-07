@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"  >
+
+        <LinearLayout
+            android:id="@+id/main_myinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_item_myinfo"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <!-- layout_width原来是wrap_content的，这样改成绝对值可能在不同的机型显示有差异，如有差异再改 -->
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.30"
+                android:src="@drawable/menu_item_myinfo" />
+
+            <TextView
+                style="@style/main_item_textview_style"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="8dp"
+                android:text="我的信息" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_myscore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_item_myscore"
+            android:clickable="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:layout_gravity="center"
+                android:src="@drawable/menu_item_myscore" />
+
+            <TextView
+                style="@style/main_item_textview_style"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="8dp"
+                android:text="我的成绩" />
+   
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/main_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_item_history"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.30"
+                android:src="@drawable/menu_item_history" />
+
+            <TextView
+				style="@style/main_item_textview_style"
+				android:layout_gravity="bottom|right"
+				android:layout_marginRight="8dp"
+                android:text="集大历史" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_teachnews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_item_teachnews"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:layout_gravity="center"
+                android:src="@drawable/menu_item_teachnews" />
+
+            <TextView
+                style="@style/main_item_textview_style"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="8dp"
+                android:text="教务信息" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/main_library"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_item_library"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.30"
+                android:src="@drawable/menu_item_library" />
+
+            <TextView
+				style="@style/main_item_textview_style"
+				android:layout_gravity="bottom|right"
+				android:layout_marginRight="8dp"
+                android:text="图书馆" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_item_map"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:layout_gravity="center"
+                android:src="@drawable/menu_item_map" />
+
+            <TextView
+                style="@style/main_item_textview_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="8dp"
+                android:text="集大地图" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom|center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/main_item_pagetrue" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/main_item_pagefalse" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/main_item_pagefalse" />
+
+    </LinearLayout>
+
+</LinearLayout>
